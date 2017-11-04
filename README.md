@@ -4,8 +4,8 @@ vim-byline
 Vim-Byline is a simple statusline implementation. It has separate colors for the file extension and file path. It changes colors on inactive windows. And it shows the read-only and unsaved symbols in red.
 
 
-# configuration
-===============
+configuration
+=============
 
 There is no configuration at this time. Please send me a message if you would like any particular configuration settings.
 
