@@ -26,11 +26,11 @@ endfun
 map <leader>X :echo ShowFuncName()<CR>
 
 hi StatusLineFile guibg=#9bfb9b guifg=#000000
-hi StatusLineFileInactive guibg=#7bbb9b guifg=#504000
-hi StatusLineExtensionActive guibg=#ffff00 guifg=#555555
-hi StatusLineExtensionInactive guibg=#698a8a guifg=#555555
-hi StatusLineActive guibg=#c9fB99
-hi StatusLineInactive guibg=#888888
+hi StatusLineFileInactive guibg=#5b7bab guifg=#504000
+hi StatusLineExtensionActive guibg=#555555 guifg=#ffffff
+hi StatusLineExtensionInactive guibg=#333333 guifg=#555555
+hi StatusLineActive guibg=#444444
+hi StatusLineInactive guibg=#222222
 hi User1 term=inverse,bold gui=inverse,bold guifg=#ff0000
 hi User2 guibg=#bbcbfb
 
@@ -51,7 +51,7 @@ function! SetActiveStatusLine ()
 
   setlocal statusline+=%=        " Switch to the right side
   setlocal statusline+=%<        " Truncate here if too long
-  " setlocal statusline+=%{g:git_branch}
+  setlocal statusline+=%{g:git_branch}
 endfunction
 
 function! SetInactiveStatusLine ()
@@ -71,7 +71,7 @@ function! SetInactiveStatusLine ()
 
   setlocal statusline+=%=        " Switch to the right side
   setlocal statusline+=%<        " Truncate here if too long
-  " setlocal statusline+=%{g:git_branch}
+  setlocal statusline+=%{g:git_branch}
 endfunction
 
 call SetActiveStatusLine()
