@@ -49,7 +49,7 @@ function! SetActiveStatusLine ()
   setlocal statusline+=/%{expand('%:h:t')}
   setlocal statusline+=/%{expand('%:t')}
 
-  setlocal statusline+=%=        " Switch to the right side
+  setlocal statusline+=\ \ %=        " Switch to the right side
   setlocal statusline+=%<        " Truncate here if too long
   setlocal statusline+=%{g:git_branch}
 endfunction
@@ -69,7 +69,7 @@ function! SetInactiveStatusLine ()
   setlocal statusline+=/%{expand('%:h:t')}
   setlocal statusline+=/%{expand('%:t')}
 
-  setlocal statusline+=%=        " Switch to the right side
+  setlocal statusline+=\ \ %=        " Switch to the right side
   setlocal statusline+=%<        " Truncate here if too long
   setlocal statusline+=%{g:git_branch}
 endfunction
